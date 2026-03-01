@@ -2,7 +2,6 @@
 
 
 CLASS AND OBJECT :-
-I understood that:
 - Class is like a blueprint.
 - Object is an instance of class.
 - We can store data using variables (like name, rollNo).
