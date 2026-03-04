@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
 class Atm{
-    Float Balance;
+    float Balance ;
     int PIN = 5678;
     public void checkPin(){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Your Pin ");
+        System.out.println("Enter Your Pin :- ");
         int accPin = sc.nextInt();
         if (PIN == accPin){
             menu();
@@ -36,7 +36,7 @@ class Atm{
         }
     }
     public void checkBalance(){
-        System.out.println("Balance" + Balance);
+        System.out.println("Balance = " + Balance);
         menu();
     }
     public void withdrawMoney(){
@@ -57,13 +57,14 @@ class Atm{
         System.out.println("Enter the Amount");
         Scanner sc = new Scanner(System.in);
         float amount =sc.nextFloat();
-        Balance = Balance+amount;
+        Balance = Balance + amount;
+        System.out.println(Balance);
         System.out.println("Money Deposit Sucessfully");
         menu();
 
     }
     public void Exit(){
-
+        System.out.println("Thankyou For Visiting Us !");
     }
 
 
