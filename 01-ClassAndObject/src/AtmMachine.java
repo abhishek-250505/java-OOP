@@ -3,8 +3,13 @@ import java.util.Scanner;
 class Atm{
     float Balance ;
     int PIN = 5678;
+    Scanner sc = new Scanner(System.in);
+
+    Atm(int b ){
+      Balance = b;
+    }
     public void checkPin(){
-        Scanner sc = new Scanner(System.in);
+
         System.out.println("Enter Your Pin :- ");
         int accPin = sc.nextInt();
         if (PIN == accPin){
@@ -73,7 +78,7 @@ class Atm{
 }
 public class AtmMachine {
    public static void main(String[] args) {
-       Atm obj = new Atm();
+       Atm obj = new Atm(20000);
        obj.checkPin();
 
     }
