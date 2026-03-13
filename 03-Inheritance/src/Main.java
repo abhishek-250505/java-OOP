@@ -12,6 +12,7 @@ class Child extends Parents{
     int roll;
     void display(){
         System.out.println("Roll no :" + roll);
+
     }
 }
 
